@@ -36,6 +36,7 @@ export default class Sidebar extends Vue {
     background-color: #F4F5F6
     color: #303540
     font-size: large
+    display: inline-block
 
 a
     height: 40px

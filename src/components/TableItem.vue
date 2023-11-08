@@ -66,7 +66,7 @@ export default defineComponent({
 .item
     display: block
     height: 5vh
-    width: calc(100vw - 180px)
+    width: calc(100vw - 300px)
     border-color: #1D1E1F
     border-width: 2px
     border-radius: 10px
