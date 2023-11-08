@@ -1,5 +1,10 @@
 <script lang="ts">
 import Sidebar from "@/components/Sidebar.vue";
+import { Options, Vue } from 'vue-class-component';
+
+export default class Manage extends Vue {
+    
+}
 </script>
 
 <template>
