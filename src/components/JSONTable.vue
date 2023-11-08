@@ -52,12 +52,12 @@ export default class JSONTable extends Vue {
 
 .item
     display: block
-    min-height: 5vh
+    min-height: 10.5vh
     width: calc(100vw - 400px)
-    border-color: #1D1E1F
-    border-width: 1.5px
+    border-color: #D9DADB
+    border-width: 3px
     border-radius: 20px
-    border-style: double
+    border-style: solid
     margin-left: 15px
     margin-top: 30px
     background-color: rgb(249, 249, 249)
@@ -83,28 +83,38 @@ export default class JSONTable extends Vue {
     width: 150px
     margin-right: 0
     margin-left: 40px
+    margin-bottom: 10px
 
 .button1
     display: inline-flex
     gap: 20px
     color: #FFFFFF
     background-color: #3052DD
-    min-height: 30px
-    min-width: 60px
+    min-height: 25px
+    min-width: 50px
     text-align: center
     vertical-align: middle
-    border-radius: 10px
+    border-radius: 5px
+    border-style: none
     font-size: large
+
+.button1:hover
+    background-color: #2642b1
 
 .button2
     display: inline-flex
     gap: 20px
     color: #FFFFFF
     background-color: #DD0000
-    min-height: 30px
-    min-width: 60px
+    min-height: 25px
+    min-width: 50px
     text-align: center
     vertical-align: middle
-    border-radius: 10px
+    border-radius: 5px
+    border-style: none
     font-size: large
+
+.button2:hover
+    background-color: #AA0000
+
 </style>

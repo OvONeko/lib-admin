@@ -11,13 +11,14 @@ export default class Sidebar extends Vue {
 
 <template>
     <div class="sidebar">
+        <div style="height: 2.5vh"></div>
         <div class="header">
             <div class="ht">
                 <img src="../assets/logo.svg" />
                 <b>Library Admin</b>
             </div>
         </div>
-        <div style="height: 5vh"></div>
+        <div style="height: 2.5vh"></div>
         <div>
             <RouterLink v-if="valid" to="/admin/manage">管理员设置</RouterLink>
             <RouterLink v-if="valid" to="/admin/user">读者管理</RouterLink>

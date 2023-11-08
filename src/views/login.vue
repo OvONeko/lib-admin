@@ -27,7 +27,17 @@ export default class Login extends Vue {
                     showCancelButton: true,
                     confirmButtonText: "确认",
                 }).then((result) => {
-                    if (result.isConfirmed) this.$router.push("/admin/manage");
+                    if (result.isConfirmed) {
+                        Swal.fire({
+                            icon: 'success',
+                            text: '登录成功',
+                            timer: 2000,
+                            timerProgressBar: true,
+                        }).then((result) => {
+                            if (result.dismiss === Swal.DismissReason.timer)
+                                this.$router.push("/admin/manage");
+                        })
+                    }
                     else this.$router.push("/");
                 });
             } else this.$router.push("/");
