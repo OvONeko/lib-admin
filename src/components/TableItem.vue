@@ -41,7 +41,7 @@ export default defineComponent({
             module(exports, Vue);
             return exports.default;
         });
-
+        console.log(renderFunction.value);
         return () => (
             <div class="item">
                 <div class="text">
@@ -62,7 +62,7 @@ export default defineComponent({
 
 <style lang="sass">
 
-@import "../css/fonts";
+@import "../css/fonts"
 
 .item
     display: block

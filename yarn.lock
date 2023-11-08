@@ -3118,6 +3118,11 @@ vue-component-type-helpers@1.8.4:
   resolved "https://registry.yarnpkg.com/vue-component-type-helpers/-/vue-component-type-helpers-1.8.4.tgz#302d85fac912519cdf0dd2fb51402e5215d85628"
   integrity sha512-6bnLkn8O0JJyiFSIF0EfCogzeqNXpnjJ0vW/SZzNHfe6sPx30lTtTXlE5TFs2qhJlAtDFybStVNpL73cPe3OMQ==
 
+vue-custom-element@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/vue-custom-element/-/vue-custom-element-3.3.0.tgz#c20bb6108a16d1f7df3c550125551bf53d0e5a75"
+  integrity sha512-ePuy1EDDJd9/piwXLwsCyMQ964HsdhXPzypM9OX0r4JBa20EVN28U7RXeTWwXkoFKim/b3sP7xT2NEM0Di6tUQ==
+
 vue-demi@>=0.14.5:
   version "0.14.6"
   resolved "https://registry.yarnpkg.com/vue-demi/-/vue-demi-0.14.6.tgz#dc706582851dc1cdc17a0054f4fec2eb6df74c92"
@@ -3136,10 +3141,10 @@ vue-eslint-parser@^9.3.1:
     lodash "^4.17.21"
     semver "^7.3.6"
 
-vue-property-decorator@^9.1.2:
-  version "9.1.2"
-  resolved "https://registry.yarnpkg.com/vue-property-decorator/-/vue-property-decorator-9.1.2.tgz#266a2eac61ba6527e2e68a6933cfb98fddab5457"
-  integrity sha512-xYA8MkZynPBGd/w5QFJ2d/NM0z/YeegMqYTphy7NJQXbZcuU6FC6AOdUAcy4SXP+YnkerC6AfH+ldg7PDk9ESQ==
+vue-property-decorator@^10.0.0-rc3:
+  version "10.0.0-rc.3"
+  resolved "https://registry.yarnpkg.com/vue-property-decorator/-/vue-property-decorator-10.0.0-rc.3.tgz#bb0cb2c7c31dc41149eb432f2104fb82dc3d95be"
+  integrity sha512-EGqjf8Lq+kTausZzfLB1ynWOcyay8ZLAc5p2VlKGEX2q+BjYw84oZxr6IcdwuxGIdNmriZqPUX6AlAluBdnbEg==
 
 vue-router@^4.2.5:
   version "4.2.5"

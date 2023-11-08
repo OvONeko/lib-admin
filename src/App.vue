@@ -5,7 +5,6 @@ import Sidebar from "@/components/Sidebar.vue";
 
 <template>
     <Sidebar />
-    <RouterView />
 </template>
 
 <style lang="sass">
@@ -15,7 +14,7 @@ import Sidebar from "@/components/Sidebar.vue";
 #app
   font-family: 'LXGW_WenKai', Arial, Helvetica, sans-serif
   min-height: 100vh
-  width: 100vw
+  min-width: 100vw
   margin: auto
 </style>
 

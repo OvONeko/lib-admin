@@ -1,14 +1,14 @@
 @font-face {
     font-family: "XiaoLaiMono";
-    src: url(./font/XiaolaiMonoSC-Regular.woff2);
+    src: url(@/css/font/XiaolaiMonoSC-Regular.woff2);
 }
 
 @font-face {
     font-family: "Consolas";
-    src: url(./font/consola.woff2);
+    src: url(@/css/font/consola.woff2);
 }
 
 @font-face {
     font-family: "LXGW_WenKai";
-    src: url(./font/LXGWWenKai-Regular.woff2);
+    src: url(@/css/font/LXGWWenKai-Regular.woff2);
 }

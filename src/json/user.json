@@ -3,12 +3,12 @@
         "title": "user1",
         "description": "user1",
         "button1": "编辑",
-        "button2": "修改"
+        "button2": "删除"
     },
     {
         "title": "user2",
         "description": "user2",
         "button1": "编辑",
-        "button2": "修改"
+        "button2": "删除"
     }
 ]
