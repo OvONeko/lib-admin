@@ -20,7 +20,7 @@ export default class Login extends Vue {
                 Swal.fire({
                     title: "管理员统一登录",
                     text: "密码",
-                    input: "text",
+                    input: "password",
                     inputAttributes: {
                         autocapitalize: "off",
                     },
