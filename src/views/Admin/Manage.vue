@@ -1,11 +1,9 @@
 <script lang="ts">
-import Sidebar from '@/components/Sidebar.vue'
+import Sidebar from "@/components/Sidebar.vue";
 </script>
 
 <template>
-    <Sidebar/>
+    <Sidebar />
 </template>
 
-<style lang="sass">
-
-</style>
+<style lang="sass"></style>

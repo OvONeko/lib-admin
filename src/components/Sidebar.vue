@@ -1,17 +1,15 @@
 <script lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import {Options, Vue} from 'vue-class-component'
+import { RouterLink, RouterView } from "vue-router";
+import { Options, Vue } from "vue-class-component";
 
-export default class Sidebar extends Vue {
-
-}
+export default class Sidebar extends Vue {}
 </script>
 
 <template>
     <div class="sidebar">
         <div class="header">
             <div class="ht">
-                <img src="../assets/logo.svg"/>
+                <img src="../assets/logo.svg" />
                 <b>Library Admin</b>
             </div>
         </div>
@@ -22,14 +20,14 @@ export default class Sidebar extends Vue {
             <RouterLink to="/admin/book">图书管理</RouterLink>
         </div>
     </div>
-    <RouterView/>
+    <RouterView />
 </template>
 
 <style lang="sass">
 
 @import '../css/color'
 
-.sidebar 
+.sidebar
     height: 100%
     width: 240px
     left: 0px
@@ -51,7 +49,7 @@ a
     max-height: 60px
     background: transparent
 
-.ht 
+.ht
     display: block
     font-size: x-large
     overflow: hidden
@@ -62,5 +60,4 @@ img
     display: inline-block
     max-height: 25px
     max-width: 25px
-
 </style>

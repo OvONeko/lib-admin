@@ -1,39 +1,42 @@
 <script lang="tsx">
-import * as Vue from 'vue';
-import { computed, defineComponent, h } from 'vue';
+import * as Vue from "vue";
+import { computed, defineComponent, h } from "vue";
 
 export default defineComponent({
     name: "TableItem",
     props: {
         title: {
             type: String,
-            required: true
+            required: true,
         },
         description: {
             type: String,
-            required: true
+            required: true,
         },
         button1: {
             type: String,
-            required: true
+            required: true,
         },
         button2: {
             type: String,
-            required: true
-        }
+            required: true,
+        },
     },
     setup(props) {
         const renderFunction = computed(() => {
-            if (!props.title)
-                return null;
-            if (!props.description)
-                return null;
-            if (!props.button1)
-                return null;
-            if (!props.button2)
-                return null;
+            if (!props.title) return null;
+            if (!props.description) return null;
+            if (!props.button1) return null;
+            if (!props.button2) return null;
 
-            const module = new Function("exports", "Vue", props.title, props.description, props.button1, props.button2)
+            const module = new Function(
+                "exports",
+                "Vue",
+                props.title,
+                props.description,
+                props.button1,
+                props.button2,
+            );
             const exports: any = {};
             module(exports, Vue);
             return exports.default;
@@ -45,9 +48,7 @@ export default defineComponent({
                     <p class="title">
                         <b>{props.title}</b>
                     </p>
-                    <p class="description">
-                        {props.description}
-                    </p>
+                    <p class="description">{props.description}</p>
                 </div>
                 <div class="buttons">
                     <button class="button1">{props.button1}</button>
@@ -55,8 +56,8 @@ export default defineComponent({
                 </div>
             </div>
         );
-    }
-})
+    },
+});
 </script>
 
 <style lang="sass">
@@ -75,7 +76,7 @@ export default defineComponent({
     border-color: #3052DD
     box-shadow: 5px 3px 3px rgba(21, 22, 23, 0.5)
 
-.text 
+.text
     display: inline-block
     font-family: 'Consolas'
     word-wrap: break-word
@@ -95,11 +96,10 @@ export default defineComponent({
     gap: 20px
     color: #FFFFFF
     background-color: #3052DD
-    
+
 .button2
     display: flex
     gap: 20px
     color: #FFFFFF
     background-color: #DD0000
-
 </style>

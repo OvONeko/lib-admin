@@ -1,18 +1,16 @@
 <script lang="ts">
-import {Options, Vue} from 'vue-class-component'
+import { Options, Vue } from "vue-class-component";
 
-export default class Navigation extends Vue {
-    
-}
+export default class Navigation extends Vue {}
 </script>
 
 <template>
-<div class="nav">
-    <div class="user">
-        <img src="../assets/default.png"/>
-        <p> Admin</p>
+    <div class="nav">
+        <div class="user">
+            <img src="../assets/default.png" />
+            <p>Admin</p>
+        </div>
     </div>
-</div>
 </template>
 
 <style lang="sass">
@@ -24,7 +22,7 @@ export default class Navigation extends Vue {
     height: 60px
     background-color: #FEFEFE
 
-.user 
+.user
     text-align: right
     display: inline-block
     vertical-align: middle
@@ -34,7 +32,7 @@ img
     max-width: 40px
     max-height: 40px
     border-radius: 56562px
-    
+
 p
     font-size: normal
     font-family: 'Consolas'
