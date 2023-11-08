@@ -33,9 +33,12 @@ export default class Login extends Vue {
                             text: '登录成功',
                             timer: 2000,
                             timerProgressBar: true,
+                            showConfirmButton: false,
                         }).then((result) => {
-                            if (result.dismiss === Swal.DismissReason.timer)
+                            if (result.dismiss === Swal.DismissReason.timer){
                                 this.$router.push("/admin/manage");
+                                localStorage.setItem("login", "success");
+                            }
                         })
                     }
                     else this.$router.push("/");

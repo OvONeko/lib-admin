@@ -3,7 +3,10 @@ import { Vue } from "vue-class-component";
 
 export default class HomeView extends Vue {
     mounted(): void {
-        this.$router.push("/login");
+        if (!localStorage.getItem("login"))
+            this.$router.push("/login");
+        else 
+            this.$router.push("/admin/book")
     }
 }
 </script>

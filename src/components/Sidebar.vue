@@ -5,7 +5,9 @@ import { Options, Vue } from "vue-class-component";
 export default class Sidebar extends Vue {
     valid = true;
 
-    created(): void {}
+    created(): void {
+        localStorage.setItem("last", this.$route.path)
+    }
 }
 </script>
 
