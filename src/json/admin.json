@@ -1,0 +1,14 @@
+[
+    {
+        "title": "admin",
+        "description": "admin",
+        "button1": "编辑",
+        "button2": "修改"
+    },
+    {
+        "title": "maintainer",
+        "description": "maintainer",
+        "button1": "编辑",
+        "button2": "修改"
+    }
+]
