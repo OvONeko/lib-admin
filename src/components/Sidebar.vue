@@ -43,6 +43,7 @@ a
     text-decoration: none
     vertical-align: middle
     text-align: left
+    text-indent: 20px
 
 .header
     display: block
