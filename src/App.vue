@@ -1,26 +1,30 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import Sidebar from '@/components/Sidebar.vue'
+
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
-
+  <Sidebar/>
   <RouterView />
 </template>
 
-<style scoped>
+<style lang="sass">
+
+@import './css/fonts.css'
+
+#app
+  font-family: 'LXGW_WenKai', Arial, Helvetica, sans-serif
+  min-height: 100vh
+  width: 100vw
+  margin: auto
+
+</style>
+
+<style scoped lang="scss">
+
+@import 'css/fonts.css';
+
 header {
   line-height: 1.5;
   max-height: 100vh;
