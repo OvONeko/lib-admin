@@ -2,7 +2,11 @@
 import { RouterLink, RouterView } from "vue-router";
 import { Options, Vue } from "vue-class-component";
 
-export default class Sidebar extends Vue {}
+export default class Sidebar extends Vue {
+    valid = true;
+
+    created(): void {}
+}
 </script>
 
 <template>
@@ -15,9 +19,9 @@ export default class Sidebar extends Vue {}
         </div>
         <div style="height: 5vh"></div>
         <div>
-            <RouterLink to="/admin/manage">管理员设置</RouterLink>
-            <RouterLink to="/admin/user">读者管理</RouterLink>
-            <RouterLink to="/admin/book">图书管理</RouterLink>
+            <RouterLink v-if="valid" to="/admin/manage">管理员设置</RouterLink>
+            <RouterLink v-if="valid" to="/admin/user">读者管理</RouterLink>
+            <RouterLink v-if="valid" to="/admin/book">图书管理</RouterLink>
         </div>
     </div>
     <RouterView />

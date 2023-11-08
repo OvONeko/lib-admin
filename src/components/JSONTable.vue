@@ -15,7 +15,7 @@ interface Item {
 export default class JSONTable extends Vue {
     @Prop({ required: true }) data!: string;
 
-    inner = ''
+    inner = "";
 
     mounted(): void {
         if (!this.data) return;
@@ -60,7 +60,7 @@ export default class JSONTable extends Vue {
     border-style: double
     margin-left: 15px
     margin-top: 30px
-    background-color: rgb(253, 253, 253)
+    background-color: rgb(249, 249, 249)
 
 .item:hover
     border-color: #3052DD
