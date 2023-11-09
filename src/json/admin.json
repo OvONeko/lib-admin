@@ -3,7 +3,7 @@
         "title": "admin",
         "description": "admin",
         "button1": "编辑",
-        "button2": "修改"
+        "button2": "删除"
     },
     {
         "title": "maintainer",
