@@ -19,9 +19,12 @@ export default class Navigation extends Vue {}
 
 .nav
     display: block
-    width: 100vw
+    position: fixed
+    width: calc(100vw - 300px)
     height: 60px
-    background-color: #FEFEFE
+    right: 0px
+    top: 0px
+    background-color: #E0E1E2
 
 .user
     text-align: right
@@ -37,6 +40,6 @@ img
 
 p
     display: inline-block
-    font-size: xx-large
+    font-size: x-large
     font-family: 'Consolas'
 </style>

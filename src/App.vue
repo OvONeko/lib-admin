@@ -1,9 +1,12 @@
 <script setup lang="ts">
 import Sidebar from "@/components/Sidebar.vue";
+import GoToTop from "./components/GoToTop.vue";
+import Navigation from "@/components/Navigation.vue";
 </script>
 
 <template>
     <Sidebar />
+    <GoToTop />
 </template>
 
 <style lang="sass">
