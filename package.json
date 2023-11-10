@@ -24,7 +24,7 @@
     "vue": "^3.3.4",
     "vue-class-component": "^8.0.0-0",
     "vue-custom-element": "^3.3.0",
-    "vue-property-decorator": "^10.0.0-rc3",
+    "vue-property-decorator": "^10.0.0-rc.3",
     "vue-router": "^4.2.5"
   },
   "devDependencies": {
