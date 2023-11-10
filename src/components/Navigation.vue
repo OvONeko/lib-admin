@@ -1,12 +1,14 @@
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
 
-export default class Navigation extends Vue {}
+export default class Navigation extends Vue {
+    valid = localStorage.getItem('login')
+}
 </script>
 
 <template>
     <div class="nav">
-        <div class="user">
+        <div class="user" v-if="valid">
             <p class="us">Admin</p>
             <img class="avatar" src="../assets/default.png" />
         </div>
