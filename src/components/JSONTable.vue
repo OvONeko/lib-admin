@@ -49,11 +49,11 @@ export default class JSONTable extends Vue {
 
 .placeholder
     display: block
-    height: 40px
+    height: 55px
 
 .table
-    width: calc(100vw - 370px)
-    max-width: calc(100vw - 370px)
+    width: calc(100vw - 330px)
+    max-width: calc(100vw - 330px)
     display: flex
     position: inherit
     flex-wrap: wrap
@@ -63,16 +63,16 @@ export default class JSONTable extends Vue {
     min-height: 10.5vh
     width: calc(50vw - 200px)
     text-decoration: none
-    border-color: #D9DADB
+    border-color: rgba(178, 179, 180, 0.5)
     border-width: 3px
     border-radius: 20px
     border-style: solid
     margin-left: 15px
-    margin-top: 30px
+    margin-top: 15px
     background-color: rgb(249, 249, 249, 0.75)
 
 .item:hover
-    border-color: #3052DD
+    border-color: rgba(48, 82, 221, 0.5)
     box-shadow: 5px 3px 3px rgba(21, 22, 23, 0.5)
 
 .text

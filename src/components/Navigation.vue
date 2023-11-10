@@ -2,7 +2,7 @@
 import { Options, Vue } from "vue-class-component";
 
 export default class Navigation extends Vue {
-    valid = localStorage.getItem('login')
+    valid = localStorage.getItem("login");
 }
 </script>
 
