@@ -1,4 +1,5 @@
 <template>
+    <div class="placeholder"></div>
     <div v-html="inner" id="table" class="table"></div>
 </template>
 
@@ -46,12 +47,16 @@ export default class JSONTable extends Vue {
 
 <style lang="sass">
 
+.placeholder
+    display: block
+    height: 40px
+
 .table
     width: calc(100vw - 370px)
     display: inline-block
-    position: absolute
+    position: inherit
     left: 300px
-    top: 30px
+    top: 60px
 
 .item
     display: block

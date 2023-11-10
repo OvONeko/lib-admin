@@ -19,7 +19,7 @@ import Navigation from "@/components/Navigation.vue";
     min-height: 100vh
     min-width: 100vw
     margin: auto
+    background: linear-gradient(to left bottom, #cffcf8, #fccfd7)
+    background-attachment: fixed
 
-//body
-//    background: linear-gradient(to left bottom, #cffcf8, #fccfd7)
 </style>

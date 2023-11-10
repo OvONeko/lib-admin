@@ -12,6 +12,7 @@ export default class Sidebar extends Vue {
 </script>
 
 <template>
+    <div></div>
     <div class="sidebar">
         <div style="height: 2.5vh"></div>
         <div class="header">
