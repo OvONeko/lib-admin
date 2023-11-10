@@ -53,15 +53,16 @@ export default class JSONTable extends Vue {
 
 .table
     width: calc(100vw - 370px)
-    display: inline-block
+    max-width: calc(100vw - 370px)
+    display: flex
     position: inherit
-    left: 300px
-    top: 60px
+    flex-wrap: wrap
 
 .item
-    display: block
+    display: flexbox
     min-height: 10.5vh
-    width: calc(100vw - 400px)
+    width: calc(50vw - 200px)
+    text-decoration: none
     border-color: #D9DADB
     border-width: 3px
     border-radius: 20px
