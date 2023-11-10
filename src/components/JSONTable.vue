@@ -49,6 +49,9 @@ export default class JSONTable extends Vue {
 .table
     width: calc(100vw - 370px)
     display: inline-block
+    position: absolute
+    left: 300px
+    top: 30px
 
 .item
     display: block
