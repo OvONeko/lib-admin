@@ -110,6 +110,9 @@ export default class JSONTable extends Vue {
 .button1:hover
     background-color: #2642b1
 
+.button1:active 
+    background-color: #1e368d
+
 .button2
     display: inline-flex
     gap: 20px
@@ -125,4 +128,7 @@ export default class JSONTable extends Vue {
 
 .button2:hover
     background-color: #AA0000
+
+.button2:active
+    background-color: #770000
 </style>
