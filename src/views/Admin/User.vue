@@ -8,6 +8,7 @@ export default class User extends Vue {
     userData = "";
 
     created(): void {
+        if (!localStorage.getItem("login")) this.$router.push("/login");
         this.userData = JSON.stringify(rawData);
     }
 }

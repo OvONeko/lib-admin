@@ -7,8 +7,8 @@ export default class Navigation extends Vue {}
 <template>
     <div class="nav">
         <div class="user">
-            <img src="../assets/default.png" />
             <p>Admin</p>
+            <img src="../assets/default.png" />
         </div>
     </div>
 </template>
@@ -18,6 +18,7 @@ export default class Navigation extends Vue {}
 @import '../css/fonts.css'
 
 .nav
+    display: block
     width: 100vw
     height: 60px
     background-color: #FEFEFE
@@ -29,11 +30,13 @@ export default class Navigation extends Vue {}
     width: 6vw
 
 img
+    display: inline-block
     max-width: 40px
     max-height: 40px
     border-radius: 56562px
 
 p
-    font-size: normal
+    display: inline-block
+    font-size: xx-large
     font-family: 'Consolas'
 </style>

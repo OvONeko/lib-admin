@@ -16,6 +16,7 @@ export default class Manage extends Vue {
     adminData = "";
 
     created(): void {
+        if (!localStorage.getItem("login")) this.$router.push("/login");
         this.adminData = JSON.stringify(rawData);
     }
 }

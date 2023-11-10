@@ -8,6 +8,7 @@ export default class Book extends Vue {
     bookData = "";
 
     created(): void {
+        if (!localStorage.getItem("login")) this.$router.push("/login");
         this.bookData = JSON.stringify(rawData);
     }
 }
