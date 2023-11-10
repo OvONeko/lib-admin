@@ -19,7 +19,7 @@ export default class GoToTop extends Vue {
     right: 40px
     z-index: 50
     user-select: none
-    background-color: #efeff5
+    background-color: rgba(239, 239, 245, 0.85)
     min-width: 50px
     min-height: 50px
     border-style: solid
