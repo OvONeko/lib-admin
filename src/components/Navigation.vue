@@ -7,8 +7,8 @@ export default class Navigation extends Vue {}
 <template>
     <div class="nav">
         <div class="user">
-            <p>Admin</p>
-            <img src="../assets/default.png" />
+            <p class="us">Admin</p>
+            <img class="avatar" src="../assets/default.png" />
         </div>
     </div>
 </template>
@@ -20,8 +20,8 @@ export default class Navigation extends Vue {}
 .nav
     display: block
     position: fixed
-    width: calc(100vw - 300px)
-    height: 60px
+    width: calc(100vw - 240px)
+    height: 50px
     right: 0px
     top: 0px
     background-color: #E0E1E2
@@ -30,16 +30,19 @@ export default class Navigation extends Vue {}
     text-align: right
     display: inline-block
     vertical-align: middle
-    width: 6vw
+    width: 16vw
+    position: fixed
+    right: 30px
 
-img
-    display: inline-block
+.avatar
+    display: inline-flex
     max-width: 40px
     max-height: 40px
     border-radius: 56562px
 
-p
-    display: inline-block
+.us
+    display: inline-flex
     font-size: x-large
     font-family: 'Consolas'
+    text-align: center
 </style>

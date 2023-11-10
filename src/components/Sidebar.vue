@@ -37,6 +37,7 @@ export default class Sidebar extends Vue {
 .sidebar
     height: 100%
     width: 240px
+    position: fixed
     left: 0px
     background-color: #F4F5F6
     color: #303540

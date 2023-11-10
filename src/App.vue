@@ -6,6 +6,7 @@ import Navigation from "@/components/Navigation.vue";
 
 <template>
     <Sidebar />
+    <Navigation />
     <GoToTop />
 </template>
 
