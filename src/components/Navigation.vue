@@ -24,7 +24,7 @@ export default class Navigation extends Vue {}
     height: 50px
     right: 0px
     top: 0px
-    background-color: #E0E1E2
+    background-color: rgba(240, 241, 242, 0.75)
 
 .user
     text-align: right
@@ -39,10 +39,16 @@ export default class Navigation extends Vue {}
     max-width: 40px
     max-height: 40px
     border-radius: 56562px
+    position: absolute
+    top: 5px
+    right: 0px
 
 .us
     display: inline-flex
     font-size: x-large
     font-family: 'Consolas'
     text-align: center
+    position: absolute
+    top: 10px
+    right: 45px
 </style>

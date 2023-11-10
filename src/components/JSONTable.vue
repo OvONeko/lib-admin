@@ -63,7 +63,7 @@ export default class JSONTable extends Vue {
     border-style: solid
     margin-left: 15px
     margin-top: 30px
-    background-color: rgb(249, 249, 249)
+    background-color: rgb(249, 249, 249, 0.75)
 
 .item:hover
     border-color: #3052DD
