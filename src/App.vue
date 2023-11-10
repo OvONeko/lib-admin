@@ -21,5 +21,4 @@ import Navigation from "@/components/Navigation.vue";
     margin: auto
     background: linear-gradient(to left bottom, #cffcf8, #fccfd7)
     background-attachment: fixed
-
 </style>
