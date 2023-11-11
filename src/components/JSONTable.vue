@@ -222,11 +222,10 @@ export default class JSONTable extends Vue {
 </style>
 
 <style lang="scss">
-
-.search:focus-visible, .search:active {
+.search:focus-visible,
+.search:active {
     background-color: rgba(255, 255, 255, 0.8);
     border-style: none;
     border-color: transparent;
 }
-
 </style>
