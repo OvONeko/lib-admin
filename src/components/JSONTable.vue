@@ -1,5 +1,13 @@
 <template>
     <div class="placeholder"></div>
+    <div class="searchbar">
+        <input
+            v-model="textValue"
+            v-on:keypress="keyDown($event.key)"
+            class="search"
+        />
+        <button v-on:click="search()" class="searchButton">🔍</button>
+    </div>
     <div v-html="inner" id="table" class="table"></div>
 </template>
 
@@ -17,6 +25,7 @@ export default class JSONTable extends Vue {
     @Prop({ required: true }) data!: string;
 
     inner = "";
+    textValue = "";
 
     mounted(): void {
         if (!this.data) return;
@@ -40,6 +49,41 @@ export default class JSONTable extends Vue {
                 </div>
             </div>`;
             i = i + 1;
+        }
+    }
+
+    keyDown(key: string): void {
+        console.log(this.textValue);
+        if (key == "Enter") this.search();
+    }
+
+    search(): void {
+        const items = JSON.parse(this.data) as Item[];
+        var i = 0;
+        this.inner = "";
+        while (i < items.length) {
+            var e = items[i];
+            if (
+                e.title.includes(this.textValue) ||
+                e.description.includes(this.textValue)
+            ) {
+                this.inner += `
+                <div>
+                    <div class="item">
+                        <div class="text">
+                            <p class="title">
+                                <b>${e.title}</b>
+                            </p>
+                            <p class="description">${e.description}</p>
+                        </div>
+                        <div class="buttons">
+                            <button class="button1">${e.button1}</button>
+                            <button class="button2">${e.button2}</button>
+                        </div>
+                    </div>
+                </div>`;
+            }
+            i++;
         }
     }
 }
@@ -131,4 +175,38 @@ export default class JSONTable extends Vue {
 
 .button2:active
     background-color: #770000
+
+.searchbar
+    display: flex
+    gap: 5px
+    width: calc(100vw - 360px)
+    max-width: calc(100vw - 360px)
+    height: 25px
+
+.search
+    display: inline-flex
+    height: 25px
+    width: calc(100vw - 390px)
+    border-style: none
+    border-radius: 10px
+    background-color: rgba(255, 255, 255, 0.5)
+    margin-left: 15px
+
+.search:hover
+    background-color: rgba(255, 255, 255, 0.75)
+
+.search:focus
+    background-color: rgba(255, 255, 255, 0.8)
+    border-style: none
+
+.searchButton
+    display: inline-flex
+    width: 30px
+    height: 25px
+    text-align: center
+    border-style: solid
+    border-width: 0.5px
+    border-color: rgb(0, 0, 0)
+    border-radius: 10px
+    font-size: large
 </style>
