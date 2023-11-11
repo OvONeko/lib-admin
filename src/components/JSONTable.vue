@@ -1,15 +1,17 @@
 <template>
     <div class="placeholder"></div>
-    <div class="searchbar">
-        <input
-            v-model="textValue"
-            v-on:keypress="keyDown($event.key)"
-            class="search"
-        />
-        <button v-on:click="search()" class="searchButton">🔍</button>
-    </div>
-    <p class="count" v-text="count"></p>
     <div v-html="inner" id="table" class="table"></div>
+    <div class="searchBox">
+        <div class="searchbar">
+            <input
+                v-model="textValue"
+                v-on:keypress="keyDown($event.key)"
+                class="search"
+            />
+            <button v-on:click="search()" class="searchButton">🔍</button>
+        </div>
+        <p class="count" v-text="count"></p>
+    </div>
 </template>
 
 <script lang="ts">
@@ -181,19 +183,27 @@ export default class JSONTable extends Vue {
 .button2:active
     background-color: #770000
 
+.searchBox
+    display: block
+    position: fixed
+    left: 0px
+    bottom: 25px
+
 .searchbar
     display: flex
     gap: 5px
-    width: calc(100vw - 360px)
-    max-width: calc(100vw - 360px)
+    width: 180px
+    max-width: 180px
     height: 25px
 
 .search
     display: inline-flex
     height: 25px
     max-height: 25px
-    width: calc(100vw - 390px)
-    border-style: none
+    width: 180px
+    border-style: solid
+    border-color: rgba(0, 0, 0, 0.25)
+    border-width: 1px
     border-radius: 10px
     background-color: rgba(255, 255, 255, 0.5)
     margin-left: 15px
