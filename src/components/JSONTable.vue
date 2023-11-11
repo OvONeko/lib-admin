@@ -8,6 +8,7 @@
         />
         <button v-on:click="search()" class="searchButton">🔍</button>
     </div>
+    <p class="count" v-text="count"></p>
     <div v-html="inner" id="table" class="table"></div>
 </template>
 
@@ -26,11 +27,11 @@ export default class JSONTable extends Vue {
 
     inner = "";
     textValue = "";
+    count = "";
 
     mounted(): void {
         if (!this.data) return;
         const items = JSON.parse(this.data) as Item[];
-        console.log(items);
         var i = 0;
         while (i < items.length) {
             var e = items[i];
@@ -50,6 +51,7 @@ export default class JSONTable extends Vue {
             </div>`;
             i = i + 1;
         }
+        this.count = items.length + " items";
     }
 
     keyDown(key: string): void {
@@ -60,6 +62,7 @@ export default class JSONTable extends Vue {
     search(): void {
         const items = JSON.parse(this.data) as Item[];
         var i = 0;
+        var n = 0;
         this.inner = "";
         while (i < items.length) {
             var e = items[i];
@@ -82,9 +85,11 @@ export default class JSONTable extends Vue {
                         </div>
                     </div>
                 </div>`;
+                n++;
             }
             i++;
         }
+        this.count = n + " items";
     }
 }
 </script>
@@ -186,18 +191,20 @@ export default class JSONTable extends Vue {
 .search
     display: inline-flex
     height: 25px
+    max-height: 25px
     width: calc(100vw - 390px)
     border-style: none
     border-radius: 10px
     background-color: rgba(255, 255, 255, 0.5)
     margin-left: 15px
 
-.search:hover
-    background-color: rgba(255, 255, 255, 0.75)
-
-.search:focus
+.search:focus-visible
     background-color: rgba(255, 255, 255, 0.8)
     border-style: none
+    border-color: transparent
+
+.search:hover
+    background-color: rgba(255, 255, 255, 0.75)
 
 .searchButton
     display: inline-flex
@@ -206,7 +213,15 @@ export default class JSONTable extends Vue {
     text-align: center
     border-style: solid
     border-width: 0.5px
-    border-color: rgb(0, 0, 0)
+    border-color: rgba(0, 0, 0, 0.25)
     border-radius: 10px
     font-size: large
+
+.count
+    font-size: x-small
+    display: block
+    margin-left: 15px
+    margin-bottom: 0
+    margin-top: 5px
+    max-height: 5px
 </style>
