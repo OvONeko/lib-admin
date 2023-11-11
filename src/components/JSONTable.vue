@@ -198,11 +198,6 @@ export default class JSONTable extends Vue {
     background-color: rgba(255, 255, 255, 0.5)
     margin-left: 15px
 
-.search:focus-visible
-    background-color: rgba(255, 255, 255, 0.8)
-    border-style: none
-    border-color: transparent
-
 .search:hover
     background-color: rgba(255, 255, 255, 0.75)
 
@@ -224,4 +219,14 @@ export default class JSONTable extends Vue {
     margin-bottom: 0
     margin-top: 5px
     max-height: 5px
+</style>
+
+<style lang="scss">
+
+.search:focus-visible, .search:active {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-style: none;
+    border-color: transparent;
+}
+
 </style>
