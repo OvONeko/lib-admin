@@ -144,7 +144,9 @@ export default class JSONTable extends Vue {
     width: 150px
     margin-right: 0
     margin-left: 40px
+    margin-top: 10px
     margin-bottom: 10px
+    padding-bottom: 10px
 
 .button1
     display: inline-flex
@@ -158,6 +160,8 @@ export default class JSONTable extends Vue {
     border-radius: 5px
     border-style: none
     font-size: large
+    margin-top: 5px
+    margin-bottom: 5px
 
 .button1:hover
     background-color: #2642b1
@@ -177,6 +181,8 @@ export default class JSONTable extends Vue {
     border-radius: 5px
     border-style: none
     font-size: large
+    margin-top: 5px
+    margin-bottom: 5px
 
 .button2:hover
     background-color: #AA0000
