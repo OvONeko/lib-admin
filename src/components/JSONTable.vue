@@ -127,10 +127,11 @@ export default class JSONTable extends Vue {
     box-shadow: 5px 3px 3px rgba(21, 22, 23, 0.5)
 
 .text
-    display: inline
+    display: inline-flexbox
     font-family: 'Consolas'
     word-wrap: break-word
-    text-indent: 20px
+    margin-left: 20px
+    margin-right: 20px
 
 .title
     font-size: x-large
