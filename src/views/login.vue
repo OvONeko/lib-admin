@@ -6,6 +6,7 @@ import { Vue } from "vue-class-component";
 
 export default class Login extends Vue {
     mounted(): void {
+        if (!!localStorage.getItem("login")) this.$router.push("/");
         Swal.fire({
             title: "管理员统一登录",
             text: "用户名",
