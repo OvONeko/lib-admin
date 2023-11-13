@@ -1,0 +1,1 @@
+import{V as o,_ as t}from"./index-9eef42b5.js";let s=class extends o{mounted(){localStorage.getItem("login")?this.$router.push("/admin/book"):this.$router.push("/login")}};function r(e,n,i,a,u,l){return null}const m=t(s,[["render",r]]);export{m as default};
