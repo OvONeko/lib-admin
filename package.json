@@ -13,6 +13,7 @@
     "format": "prettier --tab-width 4 --write src/"
   },
   "dependencies": {
+    "inversify": "^6.0.2",
     "pinia": "^2.1.7",
     "sass": "^1.69.5",
     "scss": "^0.2.4",

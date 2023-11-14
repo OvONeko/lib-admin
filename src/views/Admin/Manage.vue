@@ -10,14 +10,14 @@
 import Sidebar from "@/components/Sidebar.vue";
 import { Options, Vue } from "vue-class-component";
 import JSONTable from "@/components/JSONTable.vue";
-import rawData from "@/json/admin.json";
+import getData from "../../logic/getData";
 
 export default class Manage extends Vue {
     adminData = "";
 
     created(): void {
         if (!localStorage.getItem("login")) this.$router.push("/login");
-        this.adminData = JSON.stringify(rawData);
+        this.adminData = getData("admin.json");
     }
 }
 </script>
