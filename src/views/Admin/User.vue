@@ -2,14 +2,14 @@
 import Sidebar from "@/components/Sidebar.vue";
 import { Options, Vue } from "vue-class-component";
 import JSONTable from "@/components/JSONTable.vue";
-import rawData from "@/json/user.json";
+import getData from "@/logic/getData";
 
 export default class User extends Vue {
     userData = "";
 
     created(): void {
         if (!localStorage.getItem("login")) this.$router.push("/login");
-        this.userData = JSON.stringify(rawData);
+        this.userData = getData("user.json");
     }
 }
 </script>
