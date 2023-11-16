@@ -109,23 +109,6 @@ export default class JSONTable extends Vue {
     position: inherit
     flex-wrap: wrap
 
-.item
-    display: flexbox
-    min-height: 10.5vh
-    width: calc(50vw - 200px)
-    text-decoration: none
-    border-color: rgba(178, 179, 180, 0.5)
-    border-width: 3px
-    border-radius: 20px
-    border-style: solid
-    margin-left: 15px
-    margin-top: 15px
-    background-color: rgb(249, 249, 249, 0.75)
-
-.item:hover
-    border-color: rgba(48, 82, 221, 0.5)
-    box-shadow: 5px 3px 3px rgba(21, 22, 23, 0.5)
-
 .text
     display: inline-flexbox
     font-family: 'Consolas'
@@ -244,5 +227,32 @@ export default class JSONTable extends Vue {
     background-color: rgba(255, 255, 255, 0.8);
     border-style: none;
     border-color: transparent;
+}
+
+.item {
+    display: flexbox;
+    min-height: 10.5vh;
+    width: calc(50vw - 200px);
+    text-decoration: none;
+    border-color: rgba(178, 179, 180, 0.5);
+    border-width: 3px;
+    border-radius: 20px;
+    border-style: solid;
+    margin-left: 15px;
+    margin-top: 15px;
+    background-color: rgb(249, 249, 249, 0.75);
+    transition: 0.5s;
+    &:hover {
+        border-color: rgba(48, 82, 221, 0.5);
+        box-shadow: 5px 3px 3px rgba(21, 22, 23, 0.5);
+    }
+    &:hover::before {
+        border-color: rgba(178, 179, 180, 0.5);
+        box-shadow: none;
+    }
+    &:hover::after {
+        border-color: rgba(48, 82, 221, 0.5);
+        box-shadow: 5px 3px 3px rgba(21, 22, 23, 0.5);
+    }
 }
 </style>

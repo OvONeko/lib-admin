@@ -17,7 +17,7 @@ export default class Sidebar extends Vue {
         <div style="height: 2.5vh"></div>
         <div class="header">
             <div class="ht">
-                <img src="../assets/logo.svg" />
+                <img class="image" src="../assets/logo.svg" />
                 <b>Library Admin</b>
             </div>
         </div>
@@ -45,15 +45,6 @@ export default class Sidebar extends Vue {
     font-size: large
     display: inline-block
 
-a
-    height: 40px
-    display: block
-    color: #304050
-    text-decoration: none
-    vertical-align: middle
-    text-align: left
-    text-indent: 20px
-
 .header
     display: block
     max-height: 60px
@@ -66,8 +57,24 @@ a
     width: 100%
     text-align: center
 
-img
+.image
     display: inline-block
     max-height: 25px
     max-width: 25px
+</style>
+
+<style lang="scss">
+a {
+    height: 40px;
+    display: block;
+    color: #304050;
+    text-decoration: none;
+    text-wrap: pretty;
+    text-align: left;
+    text-indent: 20px;
+    transition: all 0.4s ease-in-out 0s;
+    &:hover {
+        box-shadow: inset 300px 0 0 0 rgba(65, 185, 131, 0.4);
+    }
+}
 </style>
