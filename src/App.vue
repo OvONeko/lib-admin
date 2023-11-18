@@ -2,12 +2,14 @@
 import Sidebar from "@/components/Sidebar.vue";
 import GoToTop from "./components/GoToTop.vue";
 import Navigation from "@/components/Navigation.vue";
+import AddButton from "@/components/AddButton.vue";
 </script>
 
 <template>
     <Sidebar />
     <Navigation />
     <GoToTop />
+    <AddButton />
 </template>
 
 <style lang="sass">
