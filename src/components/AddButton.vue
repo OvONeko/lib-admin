@@ -4,14 +4,14 @@
 
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
-import postData from '@/logic/postData';
-import {nameRouting, type NameRouting} from '@/logic/constants'
+import postData from "@/logic/postData";
+import { nameRouting, type NameRouting } from "@/logic/constants";
 import Swal from "sweetalert2";
 
 interface RQ {
-    title: string,
-    description: string,
-    type: string
+    title: string;
+    description: string;
+    type: string;
 }
 
 export default class AddButton extends Vue {
@@ -28,10 +28,10 @@ export default class AddButton extends Vue {
             console.log(nameRouting);
             if (this.$route.path == AddButton.rt.path) {
                 Swal.fire({
-                    "title": AddButton.rt.title,
-                    "input": "text",
-                    "inputAttributes": {
-                        autocapitalize: "off"
+                    title: AddButton.rt.title,
+                    input: "text",
+                    inputAttributes: {
+                        autocapitalize: "off",
                     },
                     showCancelButton: true,
                     showCloseButton: false,
@@ -39,16 +39,16 @@ export default class AddButton extends Vue {
                     cancelButtonText: "取消",
                     preConfirm: async (t) => {
                         AddButton.title = t;
-                    }
+                    },
                 }).then((result) => {
                     console.log(result.value);
                     console.log(AddButton.title);
                     if (result.isConfirmed) {
                         Swal.fire({
-                            "title": AddButton.rt.description,
-                            "input": "text",
-                            "inputAttributes": {
-                                autocapitalize: "off"
+                            title: AddButton.rt.description,
+                            input: "text",
+                            inputAttributes: {
+                                autocapitalize: "off",
                             },
                             showCancelButton: true,
                             showCloseButton: false,
@@ -56,7 +56,7 @@ export default class AddButton extends Vue {
                             cancelButtonText: "取消",
                             preConfirm: async (t) => {
                                 AddButton.description = t;
-                            }
+                            },
                         }).then((result) => {
                             if (result.isConfirmed) {
                                 var rq = {} as RQ;
@@ -85,7 +85,7 @@ export default class AddButton extends Vue {
     min-width: 50px;
     min-height: 50px;
     border-style: solid;
-    border-color: #D9DADB;
+    border-color: #d9dadb;
     border-radius: 25px;
     font-size: 29px;
     text-align: center;
@@ -93,15 +93,15 @@ export default class AddButton extends Vue {
     font-size: 25px;
     transition: 0.5s;
     &:hover {
-        border-color: #3052DD;
+        border-color: #3052dd;
         box-shadow: 8px 8px 8px rgba(44, 45, 47, 0.6);
-    };
+    }
     &::before {
-        border-color: #D9DADB;
+        border-color: #d9dadb;
         box-shadow: none;
     }
     &::after {
-        border-color: #3052DD;
+        border-color: #3052dd;
         box-shadow: 8px 8px 8px rgba(44, 45, 47, 0.6);
     }
 }

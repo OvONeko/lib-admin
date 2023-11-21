@@ -23,7 +23,7 @@ export default class GoToTop extends Vue {
     min-width: 50px;
     min-height: 50px;
     border-style: solid;
-    border-color: #D9DADB;
+    border-color: #d9dadb;
     border-radius: 25px;
     font-size: 29px;
     text-align: center;
@@ -31,15 +31,15 @@ export default class GoToTop extends Vue {
     font-size: 25px;
     transition: 0.5s;
     &:hover {
-        border-color: #3052DD;
+        border-color: #3052dd;
         box-shadow: 8px 8px 8px rgba(44, 45, 47, 0.6);
-    };
+    }
     &::before {
-        border-color: #D9DADB;
+        border-color: #d9dadb;
         box-shadow: none;
     }
     &::after {
-        border-color: #3052DD;
+        border-color: #3052dd;
         box-shadow: 8px 8px 8px rgba(44, 45, 47, 0.6);
     }
 }

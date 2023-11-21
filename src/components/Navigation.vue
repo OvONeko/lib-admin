@@ -7,7 +7,7 @@ export default class Navigation extends Vue {
         this.$router.afterEach((to, from) => {
             this.valid = localStorage.getItem("login");
             return true;
-        })
+        });
     }
 }
 </script>
